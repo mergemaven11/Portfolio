@@ -33,7 +33,7 @@ export default function StartupProject() {
                 return (
                   <div
                     key={i}
-                    className="saaya-health-div"
+                    className="health-div"
                     onClick={() => openProjectInNewWindow(project.link)}
                   >
                     <img alt="Tobias Working" src={project.image}></img>

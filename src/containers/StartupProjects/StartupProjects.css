@@ -32,9 +32,11 @@
   color: #868e96;
 }
 
-.saaya-health-div,
+.health-div,
 .nextu-div {
   cursor: pointer;
+  margin-left: 12px;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
