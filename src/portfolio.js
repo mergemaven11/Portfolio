@@ -12,7 +12,7 @@ const greeting = {
   username: "Tobias Scott",
   title: "Hi all, I'm Tobias",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 who loves building things that live on the internet and is eager to study the building blocks of the world, and enjoy rearranging them to build something even better."
+    "A passionate Software Engineer 🚀 who loves building tools that make an impact."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1MbFTGMyZm-akvGDLsKinSs1UcdnwFb6ewnmsmx2FRQQ/edit?usp=sharing",
@@ -22,11 +22,11 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/Tobias2023",
+  github: "https://github.com/tobiascodes12",
   linkedin: "https://www.linkedin.com/in/tobias-scott-he-him-b3572751/",
   gmail: "tobiascodes12@gmail.com",
   twitter: "https://twitter.com/TobiasCodes12",
-  // gitlab: 'https://gitlab.com',
+  gitlab: 'https://gitlab.com/tobiascodes12',
   // facebook: 'https://www.facebook.com',
   // medium: 'https://medium.com/,
   // stackoverflow: 'https://stackoverflow.com/',
@@ -46,6 +46,15 @@ const skillsSection = {
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    ),
+    emoji(
+      "⚡ Building / maintaining backend API and services"
+    ),
+    emoji(
+      "⚡ Validating code with TDD practices"
+    ),
+    emoji(
+      "⚡ Familiarity with Agile methodology and the entire SDLC"
     ),
   ],
 
@@ -158,8 +167,8 @@ const techStack = {
       progressPercentage: "80%",
     },
     {
-      Stack: "System Administration",
-      progressPercentage: "70%",
+      Stack: "Solution Architect (CRM)",
+      progressPercentage: "80%",
     },
   ],
   displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -172,24 +181,26 @@ const workExperiences = {
   experience: [
     {
       role: "Software Engineer",
-      company: "BreakFreeNomad",
-      companylogo: require("./assets/images/bfnLogo.jpg"),
-      date: "Oct 2019 – Jan 2020",
-      desc: "An independently run blog that provides tips to work at home or anywhere right from your favorite devices.",
+      company: "Flywheel.io",
+      companylogo: require("./assets/images/flywheel.png"),
+      date: "Jul 2022 – Current",
+      desc: "Flywheel is a biomedical research data platform for imaging and associated data.",
       descBullets: [
-        "Developed/Maintained; Development | Staging | Production code.",
-        "Used tools and services such as TinyMCE for WYSIWYG editing, PythonAnywhere for easy deployment, and Django-allauth for authentication",
+        "Contribute to building and maintaining multiple software products at Flywheel",
+        "Write tests to confirm and ensure code is working as expected",
+        "Participate in code review on merge requests"
       ],
     },
     {
-      role: "Social Media Evaluator",
-      company: "Appen",
-      companylogo: require("./assets/images/appenLogo.png"),
-      date: "Feb 2019 – Present",
-      desc: "Appen provides or improves data used for the development of machine learning and artificial intelligence products.",
+      role: "Solution / Technical Support Engineer",
+      company: "Zingtree",
+      companylogo: require("./assets/images/zingtree.jpg"),
+      date: "Aug 2021 – Aug 2022",
+      desc: "Zingtree is a  software that turns every agent into an expert by guiding them in customer conversations through step-by-step workflows.",
       descBullets: [
-        "Improve the quality of information shared online.",
-        "Research and evaluate posts for Social Media for accuracy",
+        "Assisted clients with Integrations and API support on CRM platforms",
+        "Wrote customized JavaScript code to match customer unique use cases",
+        "Assisted Sale AE’s with integration/webhook/API demos for fortune 1000 companies"
       ],
     },
     {
@@ -221,10 +232,10 @@ const workExperiences = {
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
-
+// TODO: Fix openSource
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "Tobias2023", // Change to your github username to view your profile in Contact Section.
+  githubUserName: "tobiascodes12", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true, // Set false to hide this section, defaults to true
 };
