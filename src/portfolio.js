@@ -243,19 +243,19 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "COMPANIES AND CODE I CONTRIBUTED TO",
-  projects: [
-    {
-      image: require("./assets/images/BFN.webp"),
-      link: "https://www.breakfreenomad.com/",
-    },
-    {
-      image: require("./assets/images/bbb.webp"),
-      link: "https://beerbrewerybible.netlify.app/",
-    },
-  ],
-  display: true, // Set false to hide this section, defaults to true
+  // title: "Big Projects",
+  // subtitle: "COMPANIES AND CODE I CONTRIBUTED TO",
+  // projects: [
+  //   {
+  //     image: require("./assets/images/BFN.webp"),
+  //     link: "https://www.breakfreenomad.com/",
+  //   },
+  //   {
+  //     image: require("./assets/images/bbb.webp"),
+  //     link: "https://beerbrewerybible.netlify.app/",
+  //   },
+  // ],
+  // display: true, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -302,7 +302,7 @@ const achievementSection = {
 
     {
       title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      subtitle: "Completed Certification from SMIT for PWA Web App Development",
       image: require("./assets/images/pwaLogo.webp"),
       footerLink: [
         { name: "Certification", url: "" },
@@ -376,7 +376,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1-614-398-2077",
+  // number: "+1-614-398-2077",
   emailAddress: "tobiascodes12@gmail.com",
 };
 
