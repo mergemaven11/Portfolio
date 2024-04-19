@@ -12,7 +12,7 @@ const greeting = {
   username: "Tobias Scott",
   title: "Hi all, I'm Tobias",
   subTitle: emoji(
-    "A passionate Software Engineer 🚀 who loves building tools that make an impact."
+    "A passionate Software Engineer 🚀 who loves building software that make an impact."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1MbFTGMyZm-akvGDLsKinSs1UcdnwFb6ewnmsmx2FRQQ/edit?usp=sharing",
@@ -22,11 +22,11 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/tobiascodes12",
+  github: "https://github.com/mergemaven11",
   linkedin: "https://www.linkedin.com/in/tobias-scott-he-him-b3572751/",
   gmail: "tobiascodes12@gmail.com",
   twitter: "https://twitter.com/TobiasCodes12",
-  gitlab: 'https://gitlab.com/tobiascodes12',
+  gitlab: 'https://gitlab.com/tobiascodes12/activity',
   // facebook: 'https://www.facebook.com',
   // medium: 'https://medium.com/,
   // stackoverflow: 'https://stackoverflow.com/',
@@ -235,7 +235,7 @@ To know how to get github key look at readme.md */
 // TODO: Fix openSource
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "tobiascodes12", // Change to your github username to view your profile in Contact Section.
+  githubUserName: "mergemaven11", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true, // Set false to hide this section, defaults to true
 };
