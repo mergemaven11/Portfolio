@@ -12,7 +12,7 @@ const greeting = {
   username: "Tobias Scott",
   title: "Hi all, I'm Tobias",
   subTitle: emoji(
-    "A passionate Software Engineer 🚀 who loves building software that make an impact."
+    "A passionate Software Engineer 🚀 who loves building software that makes an impact."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1MbFTGMyZm-akvGDLsKinSs1UcdnwFb6ewnmsmx2FRQQ/edit?usp=sharing",
