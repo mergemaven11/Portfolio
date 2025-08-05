@@ -26,7 +26,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/tobias-scott-he-him-b3572751/",
   gmail: "tobiascodes12@gmail.com",
   twitter: "https://twitter.com/TobiasCodes12",
-  gitlab: 'https://gitlab.com/tobiascodes12/activity',
+  gitlab: 'https://gitlab.com/users/Tobiascodes12/activity',
   // facebook: 'https://www.facebook.com',
   // medium: 'https://medium.com/,
   // stackoverflow: 'https://stackoverflow.com/',
@@ -404,3 +404,4 @@ export {
   contactInfo,
   twitterDetails,
 };
+
