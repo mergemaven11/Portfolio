@@ -236,8 +236,8 @@ To know how to get github key look at readme.md */
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "mergemaven11", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true, // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -384,7 +384,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "tobiascodes12", //Replace "twitter" with your twitter username without @
-  display: true, // Set true to display this section, defaults to false
+  display: false, // Set true to display this section, defaults to false
 };
 
 export {
@@ -404,4 +404,5 @@ export {
   contactInfo,
   twitterDetails,
 };
+
 
