@@ -243,19 +243,51 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  // title: "Big Projects",
-  // subtitle: "COMPANIES AND CODE I CONTRIBUTED TO",
-  // projects: [
-  //   {
-  //     image: require("./assets/images/BFN.webp"),
-  //     link: "https://www.breakfreenomad.com/",
-  //   },
-  //   {
-  //     image: require("./assets/images/bbb.webp"),
-  //     link: "https://beerbrewerybible.netlify.app/",
-  //   },
-  // ],
-  // display: true, // Set false to hide this section, defaults to true
+  title: "Featured Projects",
+  subtitle: "PRODUCTS AND PLATFORMS I'M BUILDING",
+  projects: [
+    {
+      image: "https://avatars.githubusercontent.com/u/38087336?s=400&v=4",
+      projectName: "BragStack",
+      projectDesc:
+        "A SaaS-style career proof tracker for capturing accomplishments, evidence, measurable impact, skills, and shareable career material. Built with FastAPI, MongoDB, React/Vite, Docker, and Docker Compose.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/mergemaven11/bragstack",
+        },
+      ],
+    },
+    {
+      image: "https://avatars.githubusercontent.com/u/38087336?s=400&v=4",
+      projectName: "Clinly",
+      projectDesc:
+        "A secure relationship portal combining encrypted messaging, journaling, progress tracking, tenant isolation, audit events, and professional/participant workflows. Built with React, FastAPI, MongoDB, and Docker.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/mergemaven11/clinly-backbone",
+        },
+      ],
+    },
+    {
+      image: "https://avatars.githubusercontent.com/u/38087336?s=400&v=4",
+      projectName: "FlashQuest",
+      projectDesc:
+        "A game-like spaced-repetition study platform with private decks, email verification, XP, mastery progression, concept cards, and break/fix labs. Built with React, FastAPI, PostgreSQL, Alembic, and Docker.",
+      footerLink: [
+        {
+          name: "Live App",
+          url: "https://flaskquest.netlify.app/",
+        },
+        {
+          name: "View on GitHub",
+          url: "https://github.com/mergemaven11/FlashQuest",
+        },
+      ],
+    },
+  ],
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -404,5 +436,3 @@ export {
   contactInfo,
   twitterDetails,
 };
-
-
