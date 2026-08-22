@@ -1,62 +1,63 @@
-import React, { useContext } from 'react';
-import './Contact.css';
-import SocialMedia from '../../components/socialMedia/SocialMedia';
-import { illustration, contactInfo } from '../../portfolio';
-import { Fade } from 'react-reveal';
-import email from '../../assets/lottie/email';
-import DisplayLottie from '../../components/displayLottie/DisplayLottie';
-import StyleContext from '../../contexts/StyleContext';
+import React, { useContext } from "react";
+import "./Contact.css";
+import { contactInfo, socialMediaLinks } from "../../portfolio";
+import { Fade } from "react-reveal";
+import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
   const { isDark } = useContext(StyleContext);
+
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main contact-margin-top" id="contact">
-        <div className="contact-div-main">
-          <div className="contact-header">
+      <section className="main contact-section" id="contact">
+        <div className={isDark ? "contact-panel contact-panel-dark" : "contact-panel"}>
+          <div className="contact-copy">
+            <span className="contact-eyebrow">LET'S BUILD SOMETHING RELIABLE</span>
             <h1 className="heading contact-title">{contactInfo.title}</h1>
-            <p
-              className={
-                isDark
-                  ? 'dark-mode contact-subtitle'
-                  : 'subTitle contact-subtitle'
-              }
-            >
+            <p className={isDark ? "dark-mode contact-subtitle" : "contact-subtitle"}>
               {contactInfo.subtitle}
             </p>
-            <div
-              className={
-                isDark ? 'dark-mode contact-text-div' : 'contact-text-div'
-              }
-            >
-              <a className="contact-detail" href={'tel:' + contactInfo.number}>
-                {contactInfo.number}
-              </a>
-              <br />
-              <br />
-              <a
-                className="contact-detail-email"
-                href={'mailto:' + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
-              <br />
-              <br />
-              <SocialMedia />
+
+            <div className="contact-status" aria-label="Availability">
+              <span className="contact-status-dot" aria-hidden="true" />
+              Open to platform engineering, software engineering, cloud operations, and developer tooling opportunities
             </div>
+
+            <div className="contact-actions">
+              <a className="contact-primary-action" href={`mailto:${contactInfo.emailAddress}`}>
+                Email Me
+              </a>
+              <a
+                className={isDark ? "contact-secondary-action contact-secondary-action-dark" : "contact-secondary-action"}
+                href={socialMediaLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                className={isDark ? "contact-secondary-action contact-secondary-action-dark" : "contact-secondary-action"}
+                href={socialMediaLinks.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+
+            <a className={isDark ? "contact-email contact-email-dark" : "contact-email"} href={`mailto:${contactInfo.emailAddress}`}>
+              {contactInfo.emailAddress}
+            </a>
           </div>
-          <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
-              <img
-                alt="Man working"
-                src={require('../../assets/images/contactMailDark.svg')}
-              ></img>
-            )}
+
+          <div className="contact-signal" aria-hidden="true">
+            <div className="contact-signal-orbit contact-signal-orbit-one" />
+            <div className="contact-signal-orbit contact-signal-orbit-two" />
+            <div className="contact-signal-core">TS</div>
+            <span className="contact-signal-label">Platform • Cloud • APIs</span>
           </div>
         </div>
-      </div>
+      </section>
     </Fade>
   );
 }
