@@ -13,9 +13,11 @@ export default function StartupProject() {
 
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="projects">
+      <section className="main" id="projects" aria-labelledby="featured-projects-heading">
         <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
+          <h1 className="skills-heading" id="featured-projects-heading">
+            {bigProjects.title}
+          </h1>
           <p
             className={
               isDark
@@ -26,52 +28,56 @@ export default function StartupProject() {
             {bigProjects.subtitle}
           </p>
 
-          <div className="startup-projects-main">
-            <div className="startup-project-text">
-              {bigProjects.projects.map((project, i) => (
-                <div key={project.projectName || i} className="health-div">
-                  {project.image && (
+          <div className="featured-project-grid">
+            {bigProjects.projects.map((project, i) => (
+              <article
+                key={project.projectName || i}
+                className={isDark ? "featured-project-card dark-project-card" : "featured-project-card"}
+              >
+                {project.image && (
+                  <div className="featured-project-image-wrap">
                     <img
-                      alt={`${project.projectName || "Project"} preview`}
+                      alt={`${project.projectName || "Project"} project preview`}
                       src={project.image}
+                      className="featured-project-image"
                     />
+                  </div>
+                )}
+
+                <div className="featured-project-content">
+                  {project.projectName && (
+                    <h2 className="featured-project-title">{project.projectName}</h2>
                   )}
 
-                  {project.projectName && <h2>{project.projectName}</h2>}
-                  {project.projectDesc && <p>{project.projectDesc}</p>}
+                  {project.projectDesc && (
+                    <p className="featured-project-description">{project.projectDesc}</p>
+                  )}
+
+                  {project.tech && (
+                    <p className="featured-project-tech">{project.tech}</p>
+                  )}
 
                   {Array.isArray(project.footerLink) && (
-                    <div>
+                    <div className="featured-project-links">
                       {project.footerLink.map((item, linkIndex) => (
                         <a
                           key={`${item.name || "link"}-${linkIndex}`}
                           href={item.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          onClick={(event) => event.stopPropagation()}
+                          className="featured-project-link"
                         >
                           {item.name}
                         </a>
                       ))}
                     </div>
                   )}
-
-                  {!project.footerLink && project.link && (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Project
-                    </a>
-                  )}
                 </div>
-              ))}
-            </div>
-            <div className="startup-project-image" />
+              </article>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
     </Fade>
   );
 }

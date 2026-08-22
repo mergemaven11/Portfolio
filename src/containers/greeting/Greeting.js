@@ -24,7 +24,6 @@ export default function Greeting() {
               <h1
                 className={isDark ? 'dark-mode greeting-text' : 'greeting-text'}
               >
-                {' '}
                 {greeting.title}{' '}
                 <span className="wave-emoji">{emoji('👋')}</span>
               </h1>
@@ -39,12 +38,13 @@ export default function Greeting() {
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text="View Projects" href="#projects" />
                 <Button
-                  text="See my resume"
+                  text="View Resume"
                   newTab={true}
                   href={greeting.resumeLink}
                 />
+                <Button text="Contact Me" href="#contact" />
               </div>
             </div>
           </div>
@@ -53,9 +53,9 @@ export default function Greeting() {
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img
-                alt="man sitting on table"
+                alt="Software engineer illustration"
                 src={require('../../assets/images/manOnTable.svg')}
-              ></img>
+              />
             )}
           </div>
         </div>
