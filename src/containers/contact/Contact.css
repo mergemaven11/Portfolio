@@ -1,85 +1,258 @@
-.contact-div-main {
-  display: flex;
+.contact-section {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
 }
 
-.dark-mode a {
-  color: white;
+.contact-panel {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
+  gap: 3rem;
+  align-items: center;
+  padding: 3.5rem;
+  border-radius: 28px;
+  border: 1px solid rgba(108, 99, 255, 0.16);
+  background:
+    radial-gradient(circle at top right, rgba(108, 99, 255, 0.14), transparent 34%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(247, 248, 252, 0.98));
+  box-shadow: 0 24px 70px rgba(31, 35, 48, 0.10);
 }
 
-.contact-div-main > * {
-  flex: 1;
+.contact-panel-dark {
+  border-color: rgba(146, 138, 255, 0.20);
+  background:
+    radial-gradient(circle at top right, rgba(108, 99, 255, 0.22), transparent 36%),
+    linear-gradient(145deg, rgba(28, 29, 36, 0.98), rgba(18, 19, 24, 0.98));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.contact-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: #6c63ff;
 }
 
 .contact-title {
-  font-size: 65px;
-  font-weight: 400;
-}
-
-.contact-detail,
-.contact-detail-email {
-  margin-top: 20px;
-  font-size: 40px;
-  font-weight: 400;
-  color: #868e96;
-  text-decoration: none;
-}
-
-.contact-detail:hover,
-.contact-detail-email:hover {
-  color: black;
-  text-shadow: 2px 1px 2px #b5b5b5;
-  transition: all 0.3s;
+  margin: 0 0 1rem;
+  font-size: clamp(2.8rem, 6vw, 5.2rem);
+  line-height: 0.98;
+  font-weight: 700;
 }
 
 .contact-subtitle {
-  text-transform: uppercase;
+  max-width: 780px;
+  margin: 0;
+  color: #5f6673;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
-.contact-text-div {
+.contact-panel-dark .contact-subtitle {
+  color: #c9ccd5;
+}
+
+.contact-status {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.7rem;
   margin-top: 1.5rem;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  background: rgba(108, 99, 255, 0.08);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-.contact-margin-top {
-  margin-top: 4rem;
+.contact-panel-dark .contact-status {
+  background: rgba(108, 99, 255, 0.15);
+  color: #f3f4f7;
 }
 
-.contact-image-div > img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 1.5rem;
-  margin-top: -4rem;
+.contact-status-dot {
+  width: 10px;
+  height: 10px;
+  margin-top: 0.32rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.12);
 }
 
-/* Media Query */
-@media (max-width: 1380px), (max-width: 768px) {
-  .contact-title {
-    font-size: 56px;
-    font-weight: 400;
-    text-align: center;
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.7rem;
+}
+
+.contact-primary-action,
+.contact-secondary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.contact-primary-action {
+  color: #fff !important;
+  background: linear-gradient(135deg, #6c63ff, #5148e5);
+  box-shadow: 0 10px 26px rgba(108, 99, 255, 0.25);
+}
+
+.contact-secondary-action {
+  color: #252833;
+  border: 1px solid rgba(37, 40, 51, 0.14);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.contact-secondary-action-dark {
+  color: #f5f6f8 !important;
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-primary-action:hover,
+.contact-secondary-action:hover {
+  transform: translateY(-2px);
+}
+
+.contact-primary-action:hover {
+  box-shadow: 0 14px 30px rgba(108, 99, 255, 0.32);
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 1.2rem;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.contact-email-dark {
+  color: #aeb3bf !important;
+}
+
+.contact-signal {
+  position: relative;
+  min-height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-signal-core {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 116px;
+  border-radius: 28px;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  background: linear-gradient(135deg, #6c63ff, #8b5cf6);
+  box-shadow: 0 18px 42px rgba(108, 99, 255, 0.32);
+}
+
+.contact-signal-orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(108, 99, 255, 0.25);
+}
+
+.contact-signal-orbit-one {
+  width: 190px;
+  height: 190px;
+}
+
+.contact-signal-orbit-two {
+  width: 255px;
+  height: 255px;
+  border-style: dashed;
+  opacity: 0.7;
+}
+
+.contact-signal-label {
+  position: absolute;
+  bottom: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777d8a;
+}
+
+.contact-panel-dark .contact-signal-label {
+  color: #aeb3bf;
+}
+
+@media (max-width: 900px) {
+  .contact-panel {
+    grid-template-columns: 1fr;
+    padding: 2.3rem;
+  }
+
+  .contact-signal {
+    min-height: 220px;
+  }
+
+  .contact-signal-orbit-one {
+    width: 160px;
+    height: 160px;
+  }
+
+  .contact-signal-orbit-two {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    margin-top: 3rem;
+  }
+
+  .contact-panel {
+    padding: 1.6rem;
+    border-radius: 20px;
   }
 
   .contact-title {
-    font-size: 40px;
-    text-align: center;
+    font-size: 2.65rem;
   }
 
   .contact-subtitle {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
+    font-size: 1rem;
   }
 
-  .contact-text-div {
-    text-align: center;
-    margin-top: 1.5rem;
+  .contact-actions {
+    flex-direction: column;
   }
 
-  .contact-detail,
-  .contact-detail-email {
-    font-size: 20px;
+  .contact-primary-action,
+  .contact-secondary-action {
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  .contact-image-div {
+  .contact-signal {
     display: none;
   }
 }
