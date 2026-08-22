@@ -95,7 +95,7 @@ const workExperiences = {
     {
       role: "Docker Support Engineer",
       company: "ServiceRocket",
-      companylogo: "https://avatars.githubusercontent.com/u/38087336?s=200&v=4",
+      companylogo: require("./assets/images/servicerocket.svg"),
       date: "2025 – Present",
       desc: "Platform-focused support engineering across Docker, Linux, container runtimes, networking, registries, Compose, and cloud-connected environments.",
       descBullets: [
@@ -107,7 +107,7 @@ const workExperiences = {
     {
       role: "Senior Support Specialist",
       company: "Robin Powered",
-      companylogo: "https://avatars.githubusercontent.com/u/38087336?s=200&v=4",
+      companylogo: require("./assets/images/robin-powered.svg"),
       date: "Jun 2024 – Jul 2025",
       desc: "Enterprise technical support across software, hardware, infrastructure, SaaS, cloud, and on-prem environments.",
       descBullets: [
@@ -153,19 +153,19 @@ const bigProjects = {
   subtitle: "PRODUCTS AND PLATFORMS I'M BUILDING",
   projects: [
     {
-      image: "https://avatars.githubusercontent.com/u/38087336?s=400&v=4",
+      image: require("./assets/images/bragstack-project.svg"),
       projectName: "BragStack",
       projectDesc: "A SaaS-style career proof tracker for capturing accomplishments, evidence, measurable impact, skills, and shareable career material. Built with FastAPI, MongoDB, React/Vite, Docker, and Docker Compose.",
       footerLink: [{ name: "View on GitHub", url: "https://github.com/mergemaven11/bragstack" }],
     },
     {
-      image: "https://avatars.githubusercontent.com/u/38087336?s=400&v=4",
+      image: require("./assets/images/clinly-project.svg"),
       projectName: "Clinly",
       projectDesc: "A secure relationship portal combining encrypted messaging, journaling, progress tracking, tenant isolation, audit events, and professional/participant workflows. Built with React, FastAPI, MongoDB, and Docker.",
       footerLink: [{ name: "View on GitHub", url: "https://github.com/mergemaven11/clinly-backbone" }],
     },
     {
-      image: "https://avatars.githubusercontent.com/u/38087336?s=400&v=4",
+      image: require("./assets/images/flashquest-project.svg"),
       projectName: "FlashQuest",
       projectDesc: "A game-like spaced-repetition study platform with private decks, email verification, XP, mastery progression, concept cards, and break/fix labs. Built with React, FastAPI, PostgreSQL, Alembic, and Docker.",
       footerLink: [
