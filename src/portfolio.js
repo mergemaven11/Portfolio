@@ -1,390 +1,213 @@
-﻿/* Change this file to get your personal Portfolio */
+/* Change this file to get your personal Portfolio */
 
 // Summary And Greeting Section
-
 import emoji from "react-easy-emoji";
 
 const illustration = {
-  animated: true, // set to false to use static SVG
+  animated: true,
 };
 
 const greeting = {
   username: "Tobias Scott",
-  title: "Hi all, I'm Tobias",
+  title: "Hi, I'm Tobias",
   subTitle: emoji(
-    "A passionate Software Engineer 🚀 who loves building software that makes an impact."
+    "Platform-focused engineer building reliable systems, developer tooling, and products across containers, cloud, APIs, and AI-enabled workflows. 🚀"
   ),
   resumeLink:
     "https://docs.google.com/document/d/1MbFTGMyZm-akvGDLsKinSs1UcdnwFb6ewnmsmx2FRQQ/edit?usp=sharing",
-  displayGreeting: true, // Set false to hide this section, defaults to true
+  displayGreeting: true,
 };
-
-// Social Media Links
 
 const socialMediaLinks = {
   github: "https://github.com/mergemaven11",
   linkedin: "https://www.linkedin.com/in/tobias-scott-he-him-b3572751/",
   gmail: "tobiascodes12@gmail.com",
   twitter: "https://twitter.com/TobiasCodes12",
-  gitlab: 'https://gitlab.com/users/Tobiascodes12/activity',
-  // facebook: 'https://www.facebook.com',
-  // medium: 'https://medium.com/,
-  // stackoverflow: 'https://stackoverflow.com/',
-  // Instagram and Twitter are also supported in the links!
-  display: true, // Set true to display this section, defaults to false
+  gitlab: "https://gitlab.com/users/Tobiascodes12/activity",
+  display: true,
 };
-
-// Skills Section
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "PLATFORM ENGINEERING • CONTAINERS • CLOUD • BACKEND/APIS • RELIABILITY",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    ),
-    emoji(
-      "⚡ Building / maintaining backend API and services"
-    ),
-    emoji(
-      "⚡ Validating code with TDD practices"
-    ),
-    emoji(
-      "⚡ Familiarity with Agile methodology and the entire SDLC"
-    ),
+    emoji("⚡ Troubleshoot Docker, Linux, networking, registries, Compose, and cloud-connected production systems"),
+    emoji("⚡ Build backend APIs, internal tooling, automation, and AI-governance workflows with Python and modern web stacks"),
+    emoji("⚡ Design containerized development environments and CI/CD workflows with Docker, Kubernetes, Helm, and GitHub Actions"),
+    emoji("⚡ Investigate incidents using logs, metrics, reproducible test cases, root-cause analysis, and clear remediation paths"),
+    emoji("⚡ Build full-stack products with React, FastAPI, MongoDB, PostgreSQL, authentication, testing, and privacy controls"),
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5",
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt",
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass",
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js",
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react",
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node",
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift",
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm",
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database",
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws",
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire",
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python",
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker",
-    },
+    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "TypeScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+    { skillName: "Linux", fontAwesomeClassname: "fab fa-linux" },
+    { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
+    { skillName: "GitHub", fontAwesomeClassname: "fab fa-github" },
+    { skillName: "Databases", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "APIs", fontAwesomeClassname: "fas fa-code" },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
 };
 
-// Education Section
-
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "Southern New Hampshire University",
       logo: require("./assets/images/SNHU_logo.png"),
-      subHeader: "Associates of Science in Information Technology",
-      duration: "September 2016 - April 2018",
-      desc: "Some of my coursework included:",
-      descBullets: [
-        "Computer Networks",
-        "Web technologies (Front End | Backend)",
-        "Object oriented design",
-        "Mathematics (statistics)",
-      ],
+      subHeader: "Bachelor of Science in Computer Science — In Progress",
+      duration: "In Progress",
+      desc: "Computer science studies focused on software engineering, algorithms, systems, and databases.",
+      descBullets: ["Data Structures and Algorithms", "Computer Architecture", "Database Systems", "UNIX Programming"],
     },
     {
       schoolName: "Southern New Hampshire University",
       logo: require("./assets/images/SNHU_logo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "Feb 2021 (Current)",
-      desc: "Some of my coursework includes:",
-      descBullets: [
-        "Data Structures and Algorithms",
-        "Computer Architecture",
-        "Database Systems",
-        "Analysis of Algorithms",
-        "UNIX Programming",
-      ],
+      subHeader: "Associate of Science in Information Technology",
+      duration: "2019",
+      desc: "Information technology foundation spanning networking, web technologies, programming, and systems.",
+      descBullets: ["Computer Networks", "Web Technologies", "Object-Oriented Design", "Statistics"],
     },
   ],
 };
-
-// Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%", //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "80%",
-    },
-    {
-      Stack: "Solution Architect (CRM)",
-      progressPercentage: "80%",
-    },
+    { Stack: "Platform Engineering & Containers", progressPercentage: "90%" },
+    { Stack: "Backend APIs & Automation", progressPercentage: "85%" },
+    { Stack: "Cloud, CI/CD & Reliability", progressPercentage: "85%" },
   ],
-  displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false,
 };
 
-// Work experience section
-
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
+    {
+      role: "Docker Support Engineer",
+      company: "ServiceRocket",
+      companylogo: require("./assets/images/servicerocket.svg"),
+      date: "2025 – Present",
+      desc: "Platform-focused support engineering across Docker, Linux, container runtimes, networking, registries, Compose, and cloud-connected environments.",
+      descBullets: [
+        "Troubleshoot complex container-platform issues, reproduce failures, and drive root-cause analysis across Linux and cloud-connected systems.",
+        "Partner with engineering on escalations by collecting logs and system evidence, isolating platform behavior, validating defects, and documenting remediation paths.",
+        "Design and build internal AI-governance tooling and support automation to standardize recurring workflows and improve knowledge reuse.",
+      ],
+    },
+    {
+      role: "Senior Support Specialist",
+      company: "Robin Powered",
+      companylogo: require("./assets/images/robin-powered.svg"),
+      date: "Jun 2024 – Jul 2025",
+      desc: "Enterprise technical support across software, hardware, infrastructure, SaaS, cloud, and on-prem environments.",
+      descBullets: [
+        "Diagnosed and resolved complex customer issues with a focus on service restoration and clear incident ownership.",
+        "Collaborated with engineering on critical escalations using reproducible findings, diagnostic evidence, and customer context to accelerate resolution.",
+      ],
+    },
     {
       role: "Software Engineer",
       company: "Flywheel.io",
       companylogo: require("./assets/images/flywheel.png"),
-      date: "Jul 2022 – Current",
-      desc: "Flywheel is a biomedical research data platform for imaging and associated data.",
+      date: "Jul 2022 – Feb 2024",
+      desc: "Software engineering for biomedical research data, diagnostics, and large-scale medical imaging workflows.",
       descBullets: [
-        "Contribute to building and maintaining multiple software products at Flywheel",
-        "Write tests to confirm and ensure code is working as expected",
-        "Participate in code review on merge requests"
+        "Developed and maintained software supporting data management, research workflows, medical imaging ingestion, and core API/CLI capabilities.",
+        "Improved reliability through automated testing and technical-debt reduction while contributing to data de-identification workflows.",
       ],
     },
     {
-      role: "Solution / Technical Support Engineer",
+      role: "Technical Support Engineer",
       company: "Zingtree",
       companylogo: require("./assets/images/zingtree.jpg"),
       date: "Aug 2021 – Aug 2022",
-      desc: "Zingtree is a  software that turns every agent into an expert by guiding them in customer conversations through step-by-step workflows.",
+      desc: "Enterprise SaaS technical support, integrations, custom development, and sales-engineering enablement.",
       descBullets: [
-        "Assisted clients with Integrations and API support on CRM platforms",
-        "Wrote customized JavaScript code to match customer unique use cases",
-        "Assisted Sale AE’s with integration/webhook/API demos for fortune 1000 companies"
-      ],
-    },
-    {
-      role: "Front-End Developer",
-      company: "Implemented.Today",
-      companylogo: require("./assets/images/imptodLogo.png"),
-      date: "Feb 2020 – Jun 2020",
-      desc: "Implemented Today helps organizations to select and implement business systems. We focus on Customer Relationship Management (CRM), Business Intelligence (BI), and Project Management (PM). We also help our client to set and properly manage Office 365 and Azure.",
-      descBullets: [
-        "Develop CRM systems with React and Angular.",
-        "Use Firebase for the backend.",
-        "Use Google Cloud platforms.",
-      ],
-    },
-    {
-      role: "Technical Support Specialist",
-      company: "Transworld Systems Inc. (TSI)",
-      companylogo: require("./assets/images/tsiLogo.png"),
-      date: "Mar 2015 – May 2018",
-      desc: "TSI is a market-leading provider of accounts receivable management and student loan servicing solutions.",
-      descBullets: [
-        "Identify software and hardware solutions.",
-        "Assist with password resets and new employee credentials.",
-        "Diagnose and repair issues.",
+        "Supported integrations with Salesforce, Zendesk, Zapier, and other SaaS platforms; wrote custom JavaScript and reproducible mock environments.",
+        "Developed Zingtree Chrome Extension V6, maintained technical documentation, and delivered demos supporting Fortune 1000 opportunities.",
       ],
     },
   ],
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-// TODO: Fix openSource
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "mergemaven11", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: false, // Set false to hide this section, defaults to true
+  githubUserName: "mergemaven11",
+  showGithubProfile: "false",
+  display: false,
 };
-
-// Some big projects you have worked on
 
 const bigProjects = {
-  // title: "Big Projects",
-  // subtitle: "COMPANIES AND CODE I CONTRIBUTED TO",
-  // projects: [
-  //   {
-  //     image: require("./assets/images/BFN.webp"),
-  //     link: "https://www.breakfreenomad.com/",
-  //   },
-  //   {
-  //     image: require("./assets/images/bbb.webp"),
-  //     link: "https://beerbrewerybible.netlify.app/",
-  //   },
-  // ],
-  // display: true, // Set false to hide this section, defaults to true
-};
-
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
+  title: "Featured Projects",
+  subtitle: "PRODUCTS AND PLATFORMS I'M BUILDING",
+  projects: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing",
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing",
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html",
-        },
-      ],
+      image: require("./assets/images/bragstack-project.svg"),
+      projectName: "BragStack",
+      projectDesc: "A SaaS-style career proof tracker for capturing accomplishments, evidence, measurable impact, skills, and shareable career material. Built with FastAPI, MongoDB, React/Vite, Docker, and Docker Compose.",
+      footerLink: [{ name: "View on GitHub", url: "https://github.com/mergemaven11/bragstack" }],
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en",
-        },
-      ],
+      image: require("./assets/images/clinly-project.svg"),
+      projectName: "Clinly",
+      projectDesc: "A secure relationship portal combining encrypted messaging, journaling, progress tracking, tenant isolation, audit events, and professional/participant workflows. Built with React, FastAPI, MongoDB, and Docker.",
+      footerLink: [{ name: "View on GitHub", url: "https://github.com/mergemaven11/clinly-backbone" }],
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certification from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/flashquest-project.svg"),
+      projectName: "FlashQuest",
+      projectDesc: "A game-like spaced-repetition study platform with private decks, email verification, XP, mastery progression, concept cards, and break/fix labs. Built with React, FastAPI, PostgreSQL, Alembic, and Docker.",
       footerLink: [
-        { name: "Certification", url: "" },
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/",
-        },
+        { name: "Live App", url: "https://flaskquest.netlify.app/" },
+        { name: "View on GitHub", url: "https://github.com/mergemaven11/FlashQuest" },
       ],
     },
   ],
-  display: false, // Set false to hide this section, defaults to true
+  display: true,
 };
 
-// Blogs Section
+const achievementSection = {
+  title: emoji("Achievements And Certifications 🏆"),
+  subtitle: "Selected certifications and engineering achievements.",
+  achievementsCards: [],
+  display: false,
+};
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-
-  blogs: [
-    {
-      url: "Url To Blog Post",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?",
-    },
-    {
-      url: "Url To Blog Post",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.",
-    },
-  ],
-  display: false, // Set false to hide this section, defaults to true
+  subtitle: "Engineering notes and things I've learned while building and troubleshooting systems.",
+  blogs: [],
+  display: false,
 };
-
-// Talks Sections
 
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-    },
-  ],
-  display: false, // Set false to hide this section, defaults to true
+  title: "Talks",
+  subtitle: "Technical talks and knowledge sharing.",
+  talks: [],
+  display: false,
 };
-
-// Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo",
-  ],
-  display: false, // Set false to hide this section, defaults to true
+  subtitle: "Conversations about technology and engineering.",
+  podcast: [],
+  display: false,
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  // number: "+1-614-398-2077",
+  title: emoji("Let's Connect ☎️"),
+  subtitle: "Want to talk platform engineering, containers, APIs, developer tooling, or a project? My inbox is open.",
   emailAddress: "tobiascodes12@gmail.com",
 };
 
-// Twitter Section
-
 const twitterDetails = {
-  userName: "tobiascodes12", //Replace "twitter" with your twitter username without @
-  display: false, // Set true to display this section, defaults to false
+  userName: "tobiascodes12",
+  display: false,
 };
 
 export {
@@ -404,5 +227,3 @@ export {
   contactInfo,
   twitterDetails,
 };
-
-
