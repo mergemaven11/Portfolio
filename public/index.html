@@ -2,131 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="%PUBLIC_URL%/favicon-32x32.png?v8=qAJ44G5Bm7"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="%PUBLIC_URL%/favicon-16x16.png?v8=qAJ44G5Bm7"
-    />
-    <link
-      rel="mask-icon"
-      href="%PUBLIC_URL%/safari-pinned-tab.svg?v8=qAJ44G5Bm7"
-      color="#885bd5"
-    />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v8=qAJ44G5Bm7" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#6c63ff" />
+
+    <title>Tobias Scott | Platform & Software Engineer</title>
     <meta
-      name="Tobias Scott Portfolio"
-      content="Web site created using create-react-app"
+      name="description"
+      content="Portfolio of Tobias Scott, a platform and software engineer focused on Docker, Linux, cloud infrastructure, backend APIs, automation, reliability, and full-stack product engineering."
     />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="%PUBLIC_URL%/apple-touch-icon.png?v8=qAJ44G5Bm7"
+    <meta
+      name="keywords"
+      content="Tobias Scott, Platform Engineer, Software Engineer, Docker Engineer, Linux Engineer, Cloud Engineer, Backend Engineer, FastAPI, React, Kubernetes, CI/CD, DevOps, Production Support"
     />
-    <meta property="og:title" content="Tobias Scott Portfolio" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tobiascscott.com/" />
-    <!-- <meta property="og:image" content="https://developerfolio.js.org/static/media/developerActivity.59389695.svg" /> !-->
-    <link
-      rel="preload"
-      href="/static/media/Montserrat-Regular.ee653992.ttf"
-      as="font"
-      type="font/woff"
-      crossorigin
-    />
-    <!-- <link rel=preload href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin> !-->
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    <meta name="author" content="Tobias Scott" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://tobiascscott.com/" />
 
-
-    -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHGRC6PSNW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GHGRC6PSNW');
-  </script>
-    
-    <!-- With Freshpaint -->
-    <script type="text/javascript">
-    (function(){function p(r,e){(e==null||e>r.length)&&(e=r.length);for(var t=0,a=new Array(e);t<e;t++)a[t]=r[t];return a}function v(r){if(Array.isArray(r))return p(r)}function h(r){if(typeof Symbol!="undefined"&&r[Symbol.iterator]!=null||r["@@iterator"]!=null)return Array.from(r)}function A(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function I(r,e){if(r){if(typeof r=="string")return p(r,e);var t=Object.prototype.toString.call(r).slice(8,-1);if(t==="Object"&&r.constructor&&(t=r.constructor.name),t==="Map"||t==="Set")return Array.from(t);if(t==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t))return p(r,e)}}function y(r){return v(r)||h(r)||I(r)||A()}var E=function(r,e){if(!e.__SV){try{var t,a,m=window.location,c=m.hash,x=function(n,o){return t=n.match(new RegExp(o+"=([^&]*)")),t?t[1]:null};c&&x(c,"fpState")&&(a=JSON.parse(decodeURIComponent(x(c,"fpState"))),a.action==="fpeditor"&&(window.sessionStorage.setItem("_fpcehash",c),history.replaceState(a.desiredHash||"",r.title,m.pathname+m.search)))}catch(S){}e.__loaded=!1,e.config=!1,e.__SV=2,window.freshpaint=new Proxy(e,{get:function(n,o){return n[o]!==void 0?n[o]:o==="init"?function(l,u,i){var _,d;(_=n)[d="_i"]||(_[d]=[]),n._i.push([l,u||{},i||"freshpaint"])}:function(){for(var l=arguments.length,u=new Array(l),i=0;i<l;i++)u[i]=arguments[i];var _=[o].concat(y(u));return n.push(_),new Proxy(_,{get:function(f,w){return f[w]?f[w]:function(){for(var b=arguments.length,g=new Array(b),s=0;s<b;s++)g[s]=arguments[s];f.length=0,f.push([o].concat(y(u))),f.push([w].concat(y(g)))}}})}}})}};E(document,window.freshpaint||[]);})();
-    freshpaint.init("d3c06393-6445-42bc-a9eb-0f89682a30bc");
-    freshpaint.page();
-</script>
-<script src="https://freshpaint-cdn.com/js/d3c06393-6445-42bc-a9eb-0f89682a30bc/freshpaint.js"></script>
-    
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1408024639849828');
-  fbq('track', 'PageView');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none" 
-       src="https://www.facebook.com/tr?id=1408024639849828&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Facebook Pixel Code -->
-
-    
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-4BK2NBGWZF');
-    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png?v8=qAJ44G5Bm7" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png?v8=qAJ44G5Bm7" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg?v8=qAJ44G5Bm7" color="#6c63ff" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v8=qAJ44G5Bm7" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png?v8=qAJ44G5Bm7" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <meta property="og:site_name" content="Tobias Scott Portfolio" />
+    <meta property="og:title" content="Tobias Scott | Platform & Software Engineer" />
+    <meta
+      property="og:description"
+      content="Platform and software engineer building reliable systems, developer tooling, backend APIs, cloud workflows, and full-stack products."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://tobiascscott.com/" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/38087336?s=1200&v=4" />
+    <meta property="og:image:alt" content="Tobias Scott — Platform & Software Engineer" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tobias Scott | Platform & Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Docker, Linux, cloud, backend APIs, automation, reliability, and full-stack engineering."
+    />
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/38087336?s=1200&v=4" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tobias Scott",
+        "url": "https://tobiascscott.com/",
+        "sameAs": [
+          "https://github.com/mergemaven11",
+          "https://www.linkedin.com/in/tobias-scott-he-him-b3572751/"
+        ],
+        "jobTitle": "Platform & Software Engineer",
+        "knowsAbout": [
+          "Docker",
+          "Linux",
+          "Cloud Infrastructure",
+          "Backend APIs",
+          "Python",
+          "FastAPI",
+          "React",
+          "Kubernetes",
+          "CI/CD",
+          "Reliability Engineering"
+        ]
+      }
+    </script>
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.13.0/css/all.min.css"
     />
 
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Tobias Scott | Software Engineer</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHGRC6PSNW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GHGRC6PSNW');
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to view Tobias Scott's portfolio.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
