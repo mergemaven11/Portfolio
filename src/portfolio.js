@@ -18,7 +18,6 @@ const greeting = {
   displayGreeting: true,
 };
 
-// Social Media Links
 const socialMediaLinks = {
   github: "https://github.com/mergemaven11",
   linkedin: "https://www.linkedin.com/in/tobias-scott-he-him-b3572751/",
@@ -28,7 +27,6 @@ const socialMediaLinks = {
   display: true,
 };
 
-// Skills Section
 const skillsSection = {
   title: "What I do",
   subTitle: "PLATFORM ENGINEERING • CONTAINERS • CLOUD • BACKEND/APIS • RELIABILITY",
@@ -54,16 +52,15 @@ const skillsSection = {
   display: true,
 };
 
-// Education Section
 const educationInfo = {
   display: true,
   schools: [
     {
       schoolName: "Southern New Hampshire University",
       logo: require("./assets/images/SNHU_logo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "2025",
-      desc: "Computer science degree focused on software engineering, algorithms, systems, and databases.",
+      subHeader: "Bachelor of Science in Computer Science — In Progress",
+      duration: "In Progress",
+      desc: "Computer science studies focused on software engineering, algorithms, systems, and databases.",
       descBullets: ["Data Structures and Algorithms", "Computer Architecture", "Database Systems", "UNIX Programming"],
     },
     {
@@ -77,7 +74,6 @@ const educationInfo = {
   ],
 };
 
-// Core engineering strengths
 const techStack = {
   viewSkillBars: true,
   experience: [
@@ -88,7 +84,6 @@ const techStack = {
   displayCodersrank: false,
 };
 
-// Work experience section
 const workExperiences = {
   display: true,
   experience: [
@@ -147,7 +142,6 @@ const openSource = {
   display: false,
 };
 
-// Featured product work
 const bigProjects = {
   title: "Featured Projects",
   subtitle: "PRODUCTS AND PLATFORMS I'M BUILDING",
