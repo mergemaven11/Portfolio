@@ -1,6 +1,5 @@
 /* Change this file to get your personal Portfolio */
 
-// Summary And Greeting Section
 import emoji from "react-easy-emoji";
 
 const illustration = {
@@ -9,9 +8,9 @@ const illustration = {
 
 const greeting = {
   username: "Tobias Scott",
-  title: "Hi, I'm Tobias",
+  title: "Platform & Software Engineer",
   subTitle: emoji(
-    "Platform-focused engineer building reliable systems, developer tooling, and products across containers, cloud, APIs, and AI-enabled workflows. 🚀"
+    "I build and troubleshoot reliable systems across Docker, Linux, cloud infrastructure, backend APIs, automation, and full-stack products. 🚀"
   ),
   resumeLink:
     "https://docs.google.com/document/d/1MbFTGMyZm-akvGDLsKinSs1UcdnwFb6ewnmsmx2FRQQ/edit?usp=sharing",
@@ -28,7 +27,7 @@ const socialMediaLinks = {
 };
 
 const skillsSection = {
-  title: "What I do",
+  title: "What I Do",
   subTitle: "PLATFORM ENGINEERING • CONTAINERS • CLOUD • BACKEND/APIS • RELIABILITY",
   skills: [
     emoji("⚡ Troubleshoot Docker, Linux, networking, registries, Compose, and cloud-connected production systems"),
@@ -144,27 +143,30 @@ const openSource = {
 
 const bigProjects = {
   title: "Featured Projects",
-  subtitle: "PRODUCTS AND PLATFORMS I'M BUILDING",
+  subtitle: "SELECTED PRODUCTS THAT SHOW HOW I DESIGN, BUILD, TEST, AND OPERATE SOFTWARE",
   projects: [
     {
       image: require("./assets/images/bragstack-project.svg"),
       projectName: "BragStack",
-      projectDesc: "A SaaS-style career proof tracker for capturing accomplishments, evidence, measurable impact, skills, and shareable career material. Built with FastAPI, MongoDB, React/Vite, Docker, and Docker Compose.",
-      footerLink: [{ name: "View on GitHub", url: "https://github.com/mergemaven11/bragstack" }],
+      projectDesc: "Career-proof SaaS for recording evidence-backed accomplishments, measurable impact, skills, and review-ready career material. Demonstrates product modeling, authentication, privacy controls, reporting workflows, automated tests, and containerized local development.",
+      tech: "FastAPI • React/Vite • MongoDB • Docker • GitHub Actions",
+      footerLink: [{ name: "View Source", url: "https://github.com/mergemaven11/bragstack" }],
     },
     {
       image: require("./assets/images/clinly-project.svg"),
       projectName: "Clinly",
-      projectDesc: "A secure relationship portal combining encrypted messaging, journaling, progress tracking, tenant isolation, audit events, and professional/participant workflows. Built with React, FastAPI, MongoDB, and Docker.",
-      footerLink: [{ name: "View on GitHub", url: "https://github.com/mergemaven11/clinly-backbone" }],
+      projectDesc: "Secure professional-participant portal with encrypted messaging, journaling, progress tracking, tenant isolation, audit events, and authorization boundaries. Demonstrates security-conscious backend design and production-minded operational controls.",
+      tech: "React • FastAPI • MongoDB • PyNaCl • Docker",
+      footerLink: [{ name: "View Source", url: "https://github.com/mergemaven11/clinly-backbone" }],
     },
     {
       image: require("./assets/images/flashquest-project.svg"),
       projectName: "FlashQuest",
-      projectDesc: "A game-like spaced-repetition study platform with private decks, email verification, XP, mastery progression, concept cards, and break/fix labs. Built with React, FastAPI, PostgreSQL, Alembic, and Docker.",
+      projectDesc: "Game-like spaced-repetition learning platform with accounts, email verification, private decks, XP, mastery progression, migrations, seed data, readiness checks, and CI quality gates.",
+      tech: "React • FastAPI • PostgreSQL • Alembic • Docker",
       footerLink: [
-        { name: "Live App", url: "https://flaskquest.netlify.app/" },
-        { name: "View on GitHub", url: "https://github.com/mergemaven11/FlashQuest" },
+        { name: "Live Demo", url: "https://flaskquest.netlify.app/" },
+        { name: "View Source", url: "https://github.com/mergemaven11/FlashQuest" },
       ],
     },
   ],
@@ -201,7 +203,7 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Let's Connect ☎️"),
-  subtitle: "Want to talk platform engineering, containers, APIs, developer tooling, or a project? My inbox is open.",
+  subtitle: "I'm interested in platform engineering, production support, cloud operations, and software engineering opportunities where troubleshooting depth and hands-on building both matter.",
   emailAddress: "tobiascodes12@gmail.com",
 };
 
