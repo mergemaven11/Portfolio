@@ -19,9 +19,8 @@
 
 .experience-container>* {
     flex: 1;
+    min-width: 0;
 }
-
-/* Media Query */
 
 @media (max-width: 1380px) {
     .experience-heading {
@@ -30,8 +29,25 @@
 }
 
 @media (max-width: 768px) {
+    .experience-container {
+        display: block;
+        margin-top: 1.5rem;
+    }
+
+    .experience-cards-div {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
     .experience-heading {
         font-size: 30px;
         text-align: center;
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .experience-cards-div {
+        gap: 14px;
     }
 }
