@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tobias Scott | Platform Engineer</title>
+  <desc id="desc">Docker, Linux, Cloud, Backend engineering portfolio</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="0.55" stop-color="#0f1636"/>
+      <stop offset="1" stop-color="#30106b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f8cff"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#5b5cff" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#5b5cff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity=".35"/></filter>
+  </defs>
+
+  <rect width="1200" height="630" rx="36" fill="url(#bg)"/>
+  <circle cx="985" cy="300" r="320" fill="url(#glow)"/>
+  <path d="M0 505H1200V630H0z" fill="#080b14" fill-opacity=".9"/>
+
+  <g transform="translate(62 58)">
+    <text x="0" y="0" fill="#4f8cff" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800">{ TCS }</text>
+    <text x="0" y="88" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="68" font-weight="800">Tobias Scott</text>
+    <text x="0" y="140" fill="url(#accent)" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" letter-spacing="8">PLATFORM ENGINEER</text>
+    <rect x="0" y="170" width="72" height="4" rx="2" fill="url(#accent)"/>
+    <text x="0" y="226" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="600">Docker  •  Linux  •  Cloud  •  Backend</text>
+    <text x="0" y="276" fill="#c5cad8" font-family="Inter,Arial,sans-serif" font-size="22">I build and troubleshoot reliable systems, automate</text>
+    <text x="0" y="310" fill="#c5cad8" font-family="Inter,Arial,sans-serif" font-size="22">infrastructure, and ship software that makes an impact.</text>
+  </g>
+
+  <g transform="translate(690 105)" filter="url(#shadow)">
+    <rect x="0" y="0" width="420" height="245" rx="18" fill="#070b18" stroke="#37416b"/>
+    <rect x="18" y="18" width="384" height="209" rx="10" fill="#0c1229"/>
+    <circle cx="42" cy="42" r="5" fill="#ff6b6b"/><circle cx="59" cy="42" r="5" fill="#ffd166"/><circle cx="76" cy="42" r="5" fill="#4ade80"/>
+    <rect x="42" y="72" width="110" height="8" rx="4" fill="#5b8cff"/><rect x="42" y="96" width="240" height="7" rx="4" fill="#64748b"/><rect x="42" y="118" width="180" height="7" rx="4" fill="#8b5cf6"/><rect x="42" y="140" width="290" height="7" rx="4" fill="#64748b"/><rect x="42" y="162" width="210" height="7" rx="4" fill="#22d3ee"/>
+    <path d="M275 190 C295 150, 315 210, 335 165 S375 205, 392 150" fill="none" stroke="url(#accent)" stroke-width="6"/>
+    <rect x="188" y="245" width="44" height="34" fill="#12182d"/><rect x="135" y="275" width="150" height="12" rx="6" fill="#1d2647"/>
+  </g>
+
+  <g transform="translate(62 535)">
+    <circle cx="32" cy="32" r="30" fill="#101936" stroke="#4657a9"/>
+    <path d="M14 32h36M32 14c10 11 10 25 0 36M32 14c-10 11-10 25 0 36M32 14a18 18 0 1 1 0 36" fill="none" stroke="#6c7cff" stroke-width="2"/>
+    <text x="86" y="20" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="800">Tobias Scott | Platform Engineer</text>
+    <text x="86" y="50" fill="#9ba3b7" font-family="Inter,Arial,sans-serif" font-size="20">tcs-portfolio.netlify.app</text>
+  </g>
+</svg>
