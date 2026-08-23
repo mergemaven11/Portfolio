@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tobiascscott.com/sitemap.xml
+Sitemap: https://tcs-portfolio.netlify.app/sitemap.xml
