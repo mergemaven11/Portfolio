@@ -2,6 +2,9 @@ import React from 'react';
 import { Fade } from 'react-reveal';
 import './StoryVideo.css';
 
+const STORY_VIDEO_URL =
+  'https://d2ol7oe51mr4n9.cloudfront.net/user_3Ik0w5J4NgW764WUePk1YWEyQuB/9efd0998-6dbb-4bb5-9295-144e851a83a1.mp4';
+
 export default function StoryVideo() {
   return (
     <Fade bottom duration={900} distance="30px">
@@ -16,12 +19,17 @@ export default function StoryVideo() {
           </p>
         </div>
 
-        <div className="story-video-frame" aria-label="My Story to Tech video placeholder">
-          <div className="story-video-placeholder">
-            <span className="story-play-icon" aria-hidden="true">▶</span>
-            <span className="story-video-label">My Story to Tech</span>
-            <span className="story-video-note">Video slot ready</span>
-          </div>
+        <div className="story-video-frame">
+          <video
+            className="story-video"
+            controls
+            playsInline
+            preload="metadata"
+            aria-label="My Story to Tech"
+          >
+            <source src={STORY_VIDEO_URL} type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
         </div>
       </section>
     </Fade>
