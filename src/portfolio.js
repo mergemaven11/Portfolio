@@ -1,5 +1,3 @@
-/* Change this file to get your personal Portfolio */
-
 import emoji from "react-easy-emoji";
 
 const illustration = { animated: true };
