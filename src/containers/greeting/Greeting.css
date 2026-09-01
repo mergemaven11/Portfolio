@@ -29,7 +29,15 @@
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
-  color: black !important;
+  color: #1f2937;
+}
+.greeting-text.dark-mode {
+  color: #f8fafc !important;
+  background-color: transparent;
+}
+.greeting-text-p.dark-mode {
+  color: #e5e7eb;
+  background-color: transparent;
 }
 .greeting-text-p {
   font-size: 30px;
