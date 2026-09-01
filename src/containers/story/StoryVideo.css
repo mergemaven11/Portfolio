@@ -1,0 +1,142 @@
+.story-section {
+  width: 90%;
+  margin: 0 auto 4rem;
+  padding: 48px 10px 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.story-copy {
+  max-width: 620px;
+}
+
+.story-eyebrow {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #6c63ff;
+}
+
+.story-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+  color: #1f2937;
+}
+
+.story-description {
+  margin: 20px 0 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #667085;
+}
+
+.story-video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f1224 0%, #1b2140 55%, #321f67 100%);
+  border: 1px solid rgba(108, 99, 255, 0.35);
+  box-shadow: 0 24px 70px rgba(17, 24, 39, 0.2);
+}
+
+.story-video-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.story-play-icon {
+  width: 74px;
+  height: 74px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding-left: 5px;
+  font-size: 28px;
+  background: #6c63ff;
+  box-shadow: 0 12px 30px rgba(108, 99, 255, 0.4);
+}
+
+.story-video-label {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.story-video-note {
+  font-size: 14px;
+  color: #cfd4ea;
+}
+
+.dark-mode .story-copy h2 {
+  color: #f8fafc;
+}
+
+.dark-mode .story-description {
+  color: #cbd5e1;
+}
+
+.dark-mode .story-video-frame {
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 900px) {
+  .story-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-top: 28px;
+  }
+
+  .story-copy {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-section {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-bottom: 3rem;
+  }
+
+  .story-copy {
+    text-align: center;
+  }
+
+  .story-description {
+    font-size: 16px;
+  }
+
+  .story-video-frame {
+    border-radius: 18px;
+  }
+
+  .story-play-icon {
+    width: 62px;
+    height: 62px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .story-section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .story-video-label {
+    font-size: 18px;
+  }
+}
