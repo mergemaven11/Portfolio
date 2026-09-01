@@ -1,67 +1,10 @@
-.dark-mode {
+.portfolio-root {
   min-height: 100vh;
   display: flow-root;
+}
+
+.dark-mode {
   background-color: #171c28;
   color: white;
   transition: background-color 0.1s ease, color 0.1s ease;
-}
-
-/* Keep the portfolio visually tight and intentional instead of leaving
-   oversized gaps between stacked sections. */
-.main,
-.skills-container,
-.education-section,
-.experience-container {
-  margin-top: 1.25rem !important;
-  padding-top: 12px !important;
-  padding-bottom: 12px !important;
-}
-
-.greet-main {
-  margin-top: 1rem !important;
-  padding-bottom: 4px !important;
-}
-
-.greeting-main > *,
-.skills-main-div > *,
-.skills-container > *,
-.education-section > * {
-  margin-bottom: 16px !important;
-}
-
-.story-section {
-  margin-bottom: 1.75rem !important;
-  padding-top: 22px !important;
-  padding-bottom: 10px !important;
-}
-
-.contact-section {
-  margin-top: 2.25rem !important;
-  margin-bottom: 1.5rem !important;
-}
-
-@media (max-width: 768px) {
-  .main,
-  .skills-container,
-  .education-section,
-  .experience-container {
-    margin-top: 1rem !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-  }
-
-  .greet-main {
-    margin-top: 0.5rem !important;
-  }
-
-  .story-section {
-    margin-bottom: 1.5rem !important;
-    padding-top: 16px !important;
-    padding-bottom: 8px !important;
-  }
-
-  .contact-section {
-    margin-top: 1.5rem !important;
-    margin-bottom: 1rem !important;
-  }
 }
