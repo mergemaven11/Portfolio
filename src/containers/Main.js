@@ -8,7 +8,6 @@ import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
-import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
 import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
@@ -17,7 +16,6 @@ import Twitter from "./twitter-embed/twitter";
 import { StyleProvider } from "../contexts/StyleContext";
 import "./Main.css";
 import Profile from "./profile/Profile";
-import { educationInfo } from "../portfolio";
 
 export default class Main extends Component {
   constructor(props) {
@@ -31,6 +29,7 @@ export default class Main extends Component {
     const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
     this.setState({ isDark: darkPref.matches });
   }
+
   changeTheme = () => {
     this.setState({ isDark: !this.state.isDark });
   };
@@ -55,7 +54,6 @@ export default class Main extends Component {
           <Twitter />
           <Podcast />
           <Profile />
-          {/* <Footer /> */}
           <Top />
         </StyleProvider>
       </div>
