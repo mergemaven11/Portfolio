@@ -59,7 +59,7 @@ Game-like spaced-repetition learning platform with accounts, email verification,
 
 **Stack:** React • FastAPI • PostgreSQL • Alembic • Docker
 
-- [Live Demo](https://flaskquest.netlify.app/)
+- [Live Demo](https://flashquestt.netlify.app/)
 - [Source](https://github.com/mergemaven11/FlashQuest)
 
 ### Variant Vault
