@@ -81,7 +81,7 @@ const bigProjects = {
 const achievementSection = { title: emoji("Achievements And Certifications 🏆"), subtitle: "Selected certifications and engineering achievements.", achievementsCards: [], display: false };
 const blogSection = { title: "Blogs", subtitle: "Engineering notes and things I've learned while building and troubleshooting systems.", blogs: [], display: false };
 const talkSection = { title: "Talks", subtitle: "Technical talks and knowledge sharing.", talks: [], display: false };
-const podcastSection = { title: "Podcast 🎙️", subtitle: "Conversations about technology and engineering.", podcast: [], display: false };
+const podcastSection = { title: emoji("Podcast 🎙️"), subtitle: "Conversations about technology and engineering.", podcast: [], display: false };
 const contactInfo = { title: emoji("Let's Connect ☎️"), subtitle: "I'm interested in platform engineering, production support, cloud operations, and software engineering opportunities where troubleshooting depth and hands-on building both matter.", emailAddress: "tobiascodes12@gmail.com" };
 const twitterDetails = { userName: "tobiascodes12", display: false };
 
