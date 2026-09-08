@@ -36,6 +36,15 @@ My work spans Docker and Linux troubleshooting, containerized environments, clou
 
 ## Featured Projects
 
+### Platform Pocket
+
+[Platform Pocket](https://github.com/mergemaven11/Platform-Pocket) is a pocket-sized ESP32-S3 platform-engineering toolkit for the M5Stack Cardputer ADV. It combines Wi-Fi diagnostics, defensive security observations, Docker and Compose references, a keyboard-driven local terminal, system utilities, themes, and an evolving SD-backed notes workflow. The project doubles as a field companion and a heavily documented learning lab for embedded systems and platform engineering.
+
+**Stack:** C++ • ESP32-S3 • PlatformIO • Arduino • M5Cardputer/M5Unified • Wi-Fi • Embedded UI
+
+- [Source](https://github.com/mergemaven11/Platform-Pocket)
+- [Architecture Docs](https://github.com/mergemaven11/Platform-Pocket/blob/main/docs/architecture.md)
+
 ### Boasted
 
 [Boasted](https://boasted.io/) is career-proof software for capturing accomplishments, projects, skills, results, supporting evidence, and measurable impact in one place, then reusing that record for resumes, interviews, performance reviews, promotions, portfolios, scholarships, and other opportunities.
