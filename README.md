@@ -12,6 +12,8 @@
 <p align="center">
   <a href="https://tcs-portfolio.netlify.app/"><strong>View Live Portfolio</strong></a>
   ·
+  <a href="https://boasted.io/"><strong>Boasted</strong></a>
+  ·
   <a href="https://github.com/mergemaven11">GitHub</a>
   ·
   <a href="https://www.linkedin.com/in/tobias-scott-he-him-b3572751/">LinkedIn</a>
@@ -34,15 +36,16 @@ My work spans Docker and Linux troubleshooting, containerized environments, clou
 
 ## Featured Projects
 
-### BragStack
+### Boasted
 
-Career-focused SaaS for capturing evidence-backed accomplishments, measurable impact, skills, and review-ready career material.
+[Boasted](https://boasted.io/) is career-proof software for capturing accomplishments, projects, skills, results, supporting evidence, and measurable impact in one place, then reusing that record for resumes, interviews, performance reviews, promotions, portfolios, scholarships, and other opportunities.
 
 **Stack:** FastAPI • React/Vite • MongoDB • Docker • GitHub Actions
 
-- [Live Site](https://usebragstack.com)
-- [API Docs](https://api.usebragstack.com/docs)
-- [Source](https://github.com/mergemaven11/bragstack)
+- [Live Site](https://boasted.io/)
+- [Career Guides](https://boasted.io/guides)
+- [How Boasted Works](https://boasted.io/how-it-works)
+- [Customer Docs](https://boasted.io/docs)
 
 ### Clinly
 
@@ -111,10 +114,12 @@ The site includes:
 - `robots.txt`
 - XML sitemap
 - semantic project sections and crawlable project links
+- a clear public reference to [Boasted](https://boasted.io/) as a product I build
 
 ## Contact
 
 - **Portfolio:** https://tcs-portfolio.netlify.app/
+- **Boasted:** https://boasted.io/
 - **GitHub:** https://github.com/mergemaven11
 - **LinkedIn:** https://www.linkedin.com/in/tobias-scott-he-him-b3572751/
 - **Email:** tobiascodes12@gmail.com
