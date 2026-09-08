@@ -17,7 +17,7 @@ export default function StoryVideo() {
           </p>
 
           <div className="story-actions" aria-label="Portfolio links">
-            <a className="story-primary-link" href="#opensource">
+            <a className="story-primary-link" href="#projects">
               See featured engineering work ↓
             </a>
             <a
