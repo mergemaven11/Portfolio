@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#0a1324"/>
+      <stop offset=".58" stop-color="#18203a"/>
+      <stop offset="1" stop-color="#221d46"/>
+    </linearGradient>
+    <linearGradient id="helix" x2="1">
+      <stop stop-color="#a58bff"/>
+      <stop offset=".5" stop-color="#71d6e8"/>
+      <stop offset="1" stop-color="#37bfa4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="40" fill="url(#bg)"/>
+  <circle cx="1040" cy="95" r="180" fill="#ff6f6f" opacity=".12"/>
+  <circle cx="1120" cy="620" r="230" fill="#a58bff" opacity=".10"/>
+  <text x="76" y="112" fill="#fff46e" font-family="Arial" font-size="28" font-weight="700">EVIDENCEHELIX</text>
+  <text x="76" y="184" fill="#ffffff" font-family="Arial" font-size="52" font-weight="700">Follow the evidence through biology.</text>
+  <text x="76" y="234" fill="#cad4e8" font-family="Arial" font-size="24">Translational medicine research intelligence</text>
+
+  <g transform="translate(90 305)">
+    <path d="M0 0 C130 70 130 160 0 230" fill="none" stroke="#a58bff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M190 0 C60 70 60 160 190 230" fill="none" stroke="#71d6e8" stroke-width="10" stroke-linecap="round"/>
+    <g stroke="#f6f6f6" stroke-width="4" opacity=".8">
+      <line x1="25" y1="26" x2="164" y2="26"/>
+      <line x1="52" y1="70" x2="137" y2="70"/>
+      <line x1="65" y1="115" x2="124" y2="115"/>
+      <line x1="52" y1="160" x2="137" y2="160"/>
+      <line x1="25" y1="204" x2="164" y2="204"/>
+    </g>
+  </g>
+
+  <g transform="translate(390 306)">
+    <rect width="730" height="258" rx="26" fill="#f6f6f6"/>
+    <text x="34" y="48" fill="#536076" font-family="Arial" font-size="17" font-weight="700">RESEARCH WORKSPACE</text>
+
+    <g font-family="Arial" font-size="18" font-weight="700">
+      <rect x="34" y="76" width="145" height="56" rx="14" fill="#ffdede"/>
+      <text x="58" y="111" fill="#a93f3f">DISEASE</text>
+
+      <rect x="205" y="76" width="145" height="56" rx="14" fill="#eee8ff"/>
+      <text x="238" y="111" fill="#6650c7">GENES</text>
+
+      <rect x="376" y="76" width="145" height="56" rx="14" fill="#e6f4ff"/>
+      <text x="399" y="111" fill="#2f6fa7">PAPERS</text>
+
+      <rect x="547" y="76" width="145" height="56" rx="14" fill="#dff7ef"/>
+      <text x="578" y="111" fill="#20816a">TRIALS</text>
+    </g>
+
+    <path d="M179 104h26M350 104h26M521 104h26" stroke="#9aa7b8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="34" y="164" width="658" height="54" rx="13" fill="#0a1324"/>
+    <text x="54" y="197" fill="#fff46e" font-family="Courier New" font-size="18">research@evidencehelix:~$ disease explore</text>
+  </g>
+
+  <text x="76" y="638" fill="#ff9a9a" font-family="Arial" font-size="20" font-weight="700">Built from a personal need to understand serious disease research for someone I love.</text>
+</svg>
